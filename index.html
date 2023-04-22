@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="container">
+        <div class="wrapper">
+            <div>
+                <img src="Passport Photo.jpeg" alt="Pic">
+            </div>
+            <div class="user-name">
+                <h2 style="color: #ffffff85; text-align: center;">Avinash Chourasia</h2>
+            </div>
+            <div class="designation">
+                <h3 style="text-align: center;">Computer Science Student</h3>
+            </div>
+            <div class="button">
+                <button onclick="openModal()" class="share">
+                    <div><i class="fa-solid fa-share" style="color: white;"></i>  Share my profile</div>
+                </button>
+                <button onclick="openModal()" class="follow">
+                    <div>Follow me</div>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share my profile</h1>
+            <div class="close">
+                <i onclick="closeModal()" class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div class="icon-container">
+            <h3>Share this via</h3>
+            <a href="https://leetcode.com/chourasiaavinash80/" class="icon" id="leetcode">
+                <i class="fa-solid fa-terminal"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/avinash-chourasia-429466202/" class="icon" id="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/avinash_chourasia_/" class="icon" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://github.com/AvinashChourasia" class="icon" id="github">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://twitter.com/26Chourasia" class="icon" id="twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+
+    <div class="overlay" onclick="closeModal()"></div>
+
+    <script src="https://kit.fontawesome.com/492022526e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+
+
+</body>
+
+</html>
